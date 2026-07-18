@@ -1,0 +1,22 @@
+---
+layout: archive
+title: "Personal Projects"
+permalink: /projects/
+author_profile: true
+---
+
+<div class="wordwrap">A quick overview of personal projects I'm happy to share :)</div>
+
+<p>Some lovely projects are waiting patiently on my computer for me to polish them up so they are ready to be shown to everyone.</p>
+
+{% if site.projects.size > 0 %}
+<ul>
+  {% for project in site.projects %}
+    <li>
+      <a href="{{ project.url | relative_url }}">{{ project.title }}</a>{% if project.excerpt %} — {{ project.excerpt | markdownify | strip_html }}{% endif %}
+    </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>Aucun projet publié pour l’instant. Crée un fichier dans <code>_projects/</code> pour ajouter un projet.</p>
+{% endif %}
