@@ -1,7 +1,8 @@
 ---
 title: 'Untangling Flow-Based Generative Models'
 date: 2025-11-20
-permalink: /posts/2025/11/blog-post-1/
+permalink: /posts/2025/11/UntangFBGM/
+excerpt: "A long journey about the history of diffusion-based generative model"
 tags:
   - Generative Models
   - Flow Matching

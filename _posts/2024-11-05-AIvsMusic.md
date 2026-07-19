@@ -1,7 +1,8 @@
 ---
 title: 'AI in music: An historic review'
 date: 2024-11-05
-permalink: /posts/2024/11/blog-post-1/
+permalink: /posts/2024/11/AIvMusic/
+excerpt: "A partially complete history of the evolution of the Music Generation helped by Artificial Intelligence"
 tags:
   - Music
   - Review
