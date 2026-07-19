@@ -10,19 +10,31 @@ redirect_from:
 
 Hi! :)
 
-I’m an engineering student at INSA Toulouse, specializing in Applied Mathematics with a focus on Machine Learning and Deep Learning.<br>
-Over the years, I’ve developed a deep passion for the transformative potential of deep learning to drive positive change in the world. I’m eager to continue exploring this field and to apply its powerful techniques to tackle real-world challenges and ensure the best use of it. <br>
-To this purpose, I’m committed to exploring diverse applications of deep learning, always seeking to expand my skills and knowledge. <br>
-Outside of my studies, I love inventing and working on a variety of projects. To me, machine learning and deep learning are powerful creative toolkits that help bring my ideas to life.
+I'm a Research Scientist at [Deezer Research](https://research.deezer.com), working at the intersection of applied mathematics and deep learning, and working toward making these crazy things safe and respectful for Arts and Artists. My (AI-oriented) topics of interest are:
+- Memorization in generative models
+- Unlearning
+- AI / deepfake detection
 
-If you’re interested in collaborating or have ideas to discuss, feel free to reach out via email. I’d love to connect!
+My work sits at the intersection of theory and practice.
 
+Outside of research, I like building and automating things. Deep learning is one of the tools I reach for, but it's far from the only one.
+My very special passion is **cooking**, which I consider the most complete form of creation...  happy to debate that with anyone who disagrees.
+
+If you're interested in collaborating, or just want to talk through an idea (or whatever comes to mind) feel free to reach out, I'd love to connect! :)
 ------
 
 News ! 
 ===
 
 <div style="height: 300px; overflow-y: scroll; border: 1px solid #ccc; padding: 10px;"> 
+  <p><b>01/06/2026</b> — I joined <a href="https://research.deezer.com/">Deezer Research</a> 💜 as a Research Scientist. How crazy!!</p>
+
+  <p><b>18/04/2026</b> — I will attend ICML 2026 in Seoul to present our paper "<a href=https://openreview.net/forum?id=Ty5X41WbJw&referrer=%5BAuthor%20Console%5D%28%2Fgroup%3Fid%3DICML.cc%2F2026%2FConference%2FAuthors%23your-submissions%29>Where Rectified Flow Leaks</a>"</p>
+
+  <p><b>28/02/2026</b> — I am now officially an applied mathematics engineer :))</p>
+  
+  <p><b>20/08/2025</b> — A new blog post is out about the broad family of diffusion-based generative models. There's a lot to read, but I believe it's worth the time</p>
+
   <p><b>01/03/2025</b> — Just starting new adventure at Telecom Paris x Deezer for my Master Internship 🥳</p>
 
   <p><b>11/06/2024</b> — As promised, my new (and first!) blog post, <i>AI in Music: A Historic Review</i>, is out! 🎶</p>
