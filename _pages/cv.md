@@ -8,99 +8,85 @@ redirect_from:
 ---
 {% include base_path %}
 
-<div class="wordwrap"><a href="../files/CV_Sesmat_research.pdf">Here</a> is a a downloadable version of my CV </div>
+<div class="wordwrap"><a href="../files/CV_Sesmat_research.pdf">Here</a> is a downloadable version of my CV </div>
 
 ===
 
 Education
 ======
-* CIMI Seminarys (non-curricular)
-  * Probabily
-  * Optimization
-  * Statistics
-* M.S. in Applied mathematics, INSA Toulouse, 2025
-  * Relevant course work : High Dimensional Deep Learning, AI Frameworks, Signal & Image processing, Machine Learning, Data Analysis, Statistical Modeling,  Continuous Optimization, Non-Differential Optimization, Advanced Probability, Stochastic processes
-* B.S. in Applied mathematics, INSA Toulouse, 2022
-* Classe préparatoire aux grandes écoles, Fabert High School, 2021
+* Toulouse Mathematical Institute (non-curricular), Sep 2024 – June 2025
+  * Open-access seminars for researchers
+  * Deep learning, probability, optimization, statistics
+* M.S. in Applied Mathematics & Engineering, National Institute of Applied Sciences (INSA Toulouse), Sep 2021 – Sep 2025
+  * Relevant coursework: High-Dimensional Deep Learning, AI Frameworks, Signal & Image Processing, Machine Learning, Data Analysis, Statistical Modeling, Continuous Optimization, Non-Differentiable Optimization, Advanced Probability, Stochastic Processes
+* Classe préparatoire aux grandes écoles, Fabert High School, Sep 2018 – Jun 2021
   * Major in Physics & Chemistry
-  * Minor in Mathematics & Informatics 
+  * Minor in Mathematics & Informatics
+  * Honorary class
 
 
 Work experiences
 ======
-* March 2025 – Januaty 2025 : Research Intern 
-  * ADASP group (Télécom Paris) x Deezer
-  * Duties included: 
-    * Critical analysis and enhancement of MIRA tools from MTG lab for detareplication detection
-    * Detection of copyrighted datas in generative model applied to music generation
-  * Supervisor: Pr. G. Peeters, G. Meseguer-Brocal
+* June 2026 – Now: Research Scientist
+  * Deezer Research
+  * Paris, France
 
 
-* July – october 2023 : Research Intern 
-  * ONERA
-  * Duties included: Theoretical conceptualization and computational development of a mixed-weight neuro-fuzzy network
-  * Supervisor: Pr. J.L. Farges (main)
+* March 2025 – January 2026: Research Intern
+  * ADASP (Télécom Paris) x Deezer Research
+  * Memorization detection and application to the detection of copyrighted data in audio generation
+  * Duties included:
+    * Critical analysis and improvement of the MTG laboratory's MIRA tools for data replication detection
+    * Development of Membership Inference Attacks on music Flow Matching models exploiting memorization
+  * Supervisors: G. Peeters, G. Meseguer-Brocal
 
 
-* June - August 2022 : Web Development Intern
-  * Anam'note
-  * Duties includes: Creating a mind map for an electronic patient record (e-crf)
-  * Supervisor: Paul Renould
+* July – December 2023: Neural Network Internship
+  * ONERA, the French Aerospace Lab
+  * Toulouse, France
+  * Duties included:
+    * Theoretical conceptualization and computational development of a mixed-weight neuro-fuzzy network
+    * Development of a binary & continuous optimizer
+    * Development from scratch without using deep learning/machine learning libraries
+  * Supervisor: J.-L. Farges
 
 
 Volunteer experiences
 ======
 
-* February - July 2023: Civic service in agroecology
+* February – July 2024: Civic Service in Agroecology
   * Djarama, Senegal
-  * Duties included: Vegetable growing, raising awareness among children
-  * Supervisor: Sylvie Seyler Diakite
+  * Duties included: Vegetable cultivation, raising environmental and nutritional awareness among children
 
 
-* September 2022 – 2024: Member of the Strategic Orientation Committee 
-  * Junior INSA Services (School's junior company)
-  * Duties included: Help and advice on Junior Entreprise strategy, internal audit of treasury department
+* September 2022 – 2024: Member of the Strategic Orientation Committee
+  * Junior INSA Service (School's junior company)
+  * Duties included: Guidance on Junior Enterprise strategy, internal audit of treasury department
 
 
-* September 2021 – 2022: Treasurer
-  * Junior INSA Services (School's junior company)
-  * National Student-Entrepreneur status
-  * Duties included: Accounting and financial management, creation and running of treasury training courses
+* September 2022 – 2024: Treasurer
+  * Junior INSA Service (School's junior company)
+  * Duties included: Accounting and financial management, creation and delivery of treasury training courses
 
-Projects
+
+Side Projects
 =====
 
-* Experimental analyses on a reLu-type network (python, keras)
-  * Set up an experiments to analyse the link between sample size and complexity of the target function in a RN.
-    * Analyse the difference between the network output and the expected output depending on the inputs. 
-  * Preliminary work to a theoretical to demonstrate an assertion
+* Pyzyconfig [In progress] — Python Framework
+  * Easy-to-use configuration saver for experiments in Python. Useful for small projects that do not require a complex Hydra pipeline.
 
 
-* Bundle of deep-learning projects (python, tensorflow, pytorch)
-  * Define and train a network to identify the painter of a painting
-  * Define and train a CVAE on Fashion-MNIST dataset
-  * Compare different SSL strategie on an Anomaly Detection downstream task
+* EasyStart
+  * Small pipelines that automate commonly used work configurations with a single keystroke (VPN detection required, SSH mounting, opening specific applications, etc.)
 
 
-* Film suggestion web-page (python, pytorch, docker)
-  * Predict the genre of a movie based on its plot or poster.
-  * Recommend movies similar to a given movie, using its plot or poster.
-  * Detect whether an image is a movie poster or not.
-  * Provide Dockerfiles to encapsulate each functionality for easy deployment.
-
-
-* Data analysis of Paris bike-sharing service (python, scikit-learn, R)
-  * Implemented dimensionality reductions algorithms (PCA, LDA), clustering methods (kmeans, HAC, GMM) and advanced factorial methods (CA, MCA, MDS, NMF).
-  * Provided in-depth interpretation and analysis of the results of all the above methods
-  
-  
 Skills & certification
 ======
-* Programming
-  * Python
-  * R
+* Programming Languages & tools
+  * Python (PyTorch, TensorFlow, scikit-learn)
+  * bash, git
 * Technical content writing
-* Languages : 
+* Languages:
   * French (Native)
   * English (TOEIC score 975/990)
 
@@ -109,10 +95,8 @@ Publications
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-Award 
-======
-* 1st place data challenge IA PAU 2023 (3000€ cash prize) - 
-  Conceptualization and development of a technical solution for a speech & video analysis tool
-  
 
+Award
+======
+* 1st place, Data Challenge IA Pau, 2023 (€3000 cash prize)
+  * Conceptualization and development of a technical solution for a speech and video analysis tool

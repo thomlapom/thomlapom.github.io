@@ -10,14 +10,14 @@ redirect_from:
 
 Hi! :)
 
-I'm a Research Scientist at [Deezer Research](https://research.deezer.com), working at the intersection of applied mathematics and deep learning, and working toward making these crazy things safe and respectful for Arts and Artists. My (AI-oriented) topics of interest are:
+I'm a Research Scientist at [Deezer Research](https://research.deezer.com), working on the general understanding of generative models, especially working toward making these crazy things safe and respectful for Arts and Artists. My (AI-oriented) topics of interest are:
 - Memorization in generative models
 - Unlearning
 - AI / deepfake detection
 
-My work sits at the intersection of theory and practice.
+My work sits at the intersection of theoretical characterization and empirical observation.
 
-Outside of research, I like building and automating things. Deep learning is one of the tools I reach for, but it's far from the only one.
+Outside of research, I like building and automating things. Deep learning is one of the tools I reach for, but far from the only one.
 My very special passion is **cooking**, which I consider the most complete form of creation...  happy to debate that with anyone who disagrees.
 
 If you're interested in collaborating, or just want to talk through an idea (or whatever comes to mind) feel free to reach out, I'd love to connect! :)
@@ -32,7 +32,7 @@ News !
   <p><b>18/04/2026</b> — I will attend ICML 2026 in Seoul to present our paper "<a href=https://openreview.net/forum?id=Ty5X41WbJw&referrer=%5BAuthor%20Console%5D%28%2Fgroup%3Fid%3DICML.cc%2F2026%2FConference%2FAuthors%23your-submissions%29>Where Rectified Flow Leaks</a>"</p>
 
   <p><b>28/02/2026</b> — I am now officially an applied mathematics engineer :))</p>
-  
+
   <p><b>20/08/2025</b> — A new blog post is out about the broad family of diffusion-based generative models. There's a lot to read, but I believe it's worth the time</p>
 
   <p><b>01/03/2025</b> — Just starting new adventure at Telecom Paris x Deezer for my Master Internship 🥳</p>
