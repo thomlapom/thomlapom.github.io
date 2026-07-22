@@ -53,7 +53,7 @@ The terminology itself was popularized by Rezende & Mohamed [6] in the context o
 **In practice**, training a normalizing flow looks like this:
 1. Sample a batch of data $$x$$.
 2. Compute $$z = g^{-1}(x)$$, accumulating the log-determinant layer by layer.
-3. The loss is the negative log-likelihood: $$-\big[\log p_Z(z) + \sum_k \log|\det J_k|\big]$$.
+3. The loss is the negative log-likelihood: $$-\big[\log p_Z(z) + \sum_k \log \lvert \det J_k \rvert \big]$$.
 4. Gradient step, repeat.
 
 The sampling is in one forward pass: draw $$z \sim \mathcal{N}(0,I)$$ and compute $$x = g(z)$$, *et voila*.
