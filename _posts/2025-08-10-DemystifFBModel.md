@@ -251,21 +251,21 @@ These methods represent the current frontier: one-step generation without multi-
 
 ## 9. If They're Equivalent, Why Do Some Work Better?
 
-The mathematical equivalences above are real. DDPM training is denoising score matching. And more generally, Kingma & Gao [27] proved that all commonly used diffusion objectives equal a weighted integral of ELBOs, one ELBO per noise level, with only the weighting function differing between them (under monotonic weighting, the objective is exactly the ELBO with Gaussian data augmentation). Flow matching with diffusion paths falls under the same umbrella. So where do practical differences come from?
+As we just saw, "mathematical equivalence" between some of those method is not a bait to do the headlines: DDPM training is denoising score matching. And more generally, Kingma & Gao [27] proved that all commonly used diffusion objectives equal a weighted integral of ELBOs, one ELBO per noise level, with only the weighting function differing between them (under monotonic weighting, the objective is exactly the ELBO with Gaussian data augmentation). Thus, flow matching with diffusion paths falls under the same umbrella. So where do practical differences come from?
 
 **The interpolation path matters more than the objective.** Straight (OT/linear) paths have lower curvature than diffusion paths, so each ODE solver step introduces less discretization error, so you need fewer steps for the same quality. Lipman et al. [19] showed this experimentally: same architecture, but OT paths give lower FID with fewer NFEs.
 
-**The network parameterization matters.** You can predict the noise, the clean data, or the velocity ($$v$$-parameterization, introduced by Salimans & Ho [17]). These are mathematically interconvertible but numerically different. With noise prediction, the target has constant norm, but at low noise levels the useful signal in the input is large relative to the noise, so the network must predict a small perturbation from a large input, an ill-conditioned problem. Velocity prediction rebalances this by combining data and noise with time-dependent weights. Karras et al. [28] (2022, "EDM") showed through extensive ablations that these preconditioning choices affect quality more than the choice of theoretical framework.
+**The network parameterization matters.** You network can do many different things: you can predict the noise, the clean data, or the velocity ($$v$$-parameterization, introduced by Salimans & Ho [17]). Even if these are mathematically interconvertible but numerically different. With noise prediction, the target has constant norm, but at low noise levels the useful signal in the input is large relative to the noise, so the network must predict a small perturbation from a large input, an ill-conditioned problem. Velocity prediction rebalances this by combining data and noise with time-dependent weights. Karras et al. [28] (2022, "EDM") showed through extensive ablations that these preconditioning choices affect quality more than the choice of theoretical framework.
 
 **The sampler is separable from training.** You can train as DDPM and sample with DDIM, DPM-Solver++, or distill into a Consistency Model. Many reported "performance differences" between methods are actually differences in samplers.
 
 **Diffusion paths have uneven curvature.** They change slowly early on (lots of noise) and rapidly near the end (fine details). OT/linear paths distribute the change more evenly, making uniform step sizes more efficient.
 
-In short: the differences that matter in practice are engineering choices (path shape, parameterization, sampler) made within a shared framework. Not much of a paradigm differences. Flow matching became the standard not because it is fundamentally more powerful than diffusion, but because it packages the best of these engineering choices into a cleaner, simpler framework.
+Long story short, the differences that matter in practice are engineering choices (path shape, parameterization, sampler) made within a shared framework. Not much of a paradigm differences. Flow matching became the standard not because it is fundamentally more powerful than diffusion, but because it packages the best of these engineering choices into a cleaner, simpler framework.
 
 ## 10. What People Actually Use
 
-**Flow matching / rectified flow** is the current default for new projects. Stable Diffusion 3 uses a flow-matching objective with rectified flow paths, and Flux (Black Forest Labs) is described as a "rectified flow transformer". Inference: 20 to 50 steps for quality, 4 to 8 with distillation.
+**Flow matching / rectified flow** is the current default for new projects. For exemple, Stable Diffusion 3 uses a flow-matching objective with rectified flow paths, and Flux (Black Forest Labs) is described as a "rectified flow transformer".
 
 **Diffusion models** with optimized samplers (DPM-Solver++, Karras schedule) remain widely deployed (DALL-E 3, Imagen, Midjourney). The quality gap versus flow matching is small.
 
@@ -273,7 +273,7 @@ In short: the differences that matter in practice are engineering choices (path 
 
 One practical note that applies across all of the above: nearly all deployed image and video models operate in a **latent space**. Latent Diffusion [29] (Rombach et al., CVPR 2022, the basis of Stable Diffusion) first compresses images with a VAE, then runs the diffusion or flow process in the compressed latent space. This choice is orthogonal to the training framework (you can do latent diffusion or latent flow matching), but it is essential for computational efficiency at high resolution.
 
-For implementation, the best starting resource is the Flow Matching Guide and Code [30] (Lipman et al., 2024). For a deep dive into the diffusion/FM equivalence, see Diffusion Meets Flow Matching [25] (Kingma & Gao, 2024).
+For implementation, the best starting resource is in my opininon the Flow Matching Guide and Code [30] (Lipman et al., 2024). For a deep dive into the diffusion/FM equivalence, see Diffusion Meets Flow Matching [25] (Kingma & Gao, 2024).
 
 ## 11. Summary
 
